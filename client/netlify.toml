@@ -1,0 +1,10 @@
+# netlify config
+[build]
+  command = "npm run build"
+  publish = "build"
+
+  ## Redirect for Single Page Applications like create-react-app.
+  [[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200
